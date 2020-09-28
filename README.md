@@ -24,6 +24,14 @@ text="A large number of cancer patients died.Many deaths were caused by stomach 
 nlp.get_results(text)
 #{'How many cancer patients died?': 'a large number', 'How many deaths were caused by stomach cancer?': 'many'}
 ```
+#### insights with textfile
+
+```
+from insi import insi
+nlp=insi()
+inputfile=sampleinput.txt
+nlp.get_results(text)
+#{'How many cancer patients died?': 'a large number', 'How many deaths were caused by stomach cancer?': 'many'}
 #### Improved insights with csvs
 
 Using csv file(s) related to the text could help build more insights.The sample input csvs and schemas can be found in [sample](insi/sample) and [schema](insi/schema) respectively. Using a schema is optional.   
