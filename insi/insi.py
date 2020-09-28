@@ -45,6 +45,11 @@ class insi:
             `list` of strings containing questions .
 
         """
+        inputfile = None
+        if inputfile :
+            f= open(inputfile)
+            text=f.read()
+            
         questions=qg(text)
         if csv:
             qmaps=self.get_scores(questions)
